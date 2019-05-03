@@ -20,6 +20,7 @@ public class ListarActivity extends AppCompatActivity {
     Adapter adapter;
     Spinner sGenero;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
