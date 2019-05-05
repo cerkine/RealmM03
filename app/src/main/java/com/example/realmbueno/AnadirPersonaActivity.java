@@ -14,6 +14,7 @@ import io.realm.Realm;
 public class AnadirPersonaActivity extends AppCompatActivity {
     private String genero;
     Spinner sGenero;
+    Realm realm;
 
 
     @Override
@@ -21,7 +22,7 @@ public class AnadirPersonaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anadir_persona);
         Realm.init(this);
-        final Realm realm = Realm.getDefaultInstance();
+        realm = Realm.getDefaultInstance();
         realm.beginTransaction();
         String[] arrayGenero = new String[] {
                 "Hombre", "Mujer", "Otro"};
@@ -52,5 +53,12 @@ public class AnadirPersonaActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        realm.commitTransaction();
+        finish();
+        super.onBackPressed();
     }
 }

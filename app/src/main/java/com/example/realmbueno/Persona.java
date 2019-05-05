@@ -16,4 +16,14 @@ public class Persona extends RealmObject {
     String genero;
 
 
+    public Persona(String dni, String nombre, String apellido, String genero, int edat) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.genero = genero;
+        this.edat = edat;
+    }
+    public Persona(){
+
+    }
 }

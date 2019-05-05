@@ -8,20 +8,52 @@
 
     <TextView
         android:id="@+id/listadni"
-        android:layout_width="30dp"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/edatList"
-        android:layout_width="30dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/listadni"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/apellidoList"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/edatList"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nombreList"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/apellidoList"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/generotList"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/nombreList"
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
