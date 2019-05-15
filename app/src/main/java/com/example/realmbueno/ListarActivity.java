@@ -80,7 +80,6 @@ public class ListarActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 buscar(less);
-                Log.e("pepe","gola");
             }
         });
 

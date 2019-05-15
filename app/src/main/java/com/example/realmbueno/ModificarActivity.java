@@ -21,7 +21,6 @@ public class ModificarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_modificar);
 
         etName = findViewById(R.id.etName);
-        etSurname = findViewById(R.id.etSurname);
         etAge = findViewById(R.id.etAge);
 
         String[] opcionesSpinner = new String[] {
@@ -34,7 +33,6 @@ public class ModificarActivity extends AppCompatActivity {
 
 
         final String nom = getIntent().getStringExtra("ModificarNombre");
-        final String cognom = getIntent().getStringExtra("ModificarApellido");
         final String edat = getIntent().getStringExtra("ModificarEdat");
         final String genere = getIntent().getStringExtra("ModificarGenere");
 
@@ -45,7 +43,7 @@ public class ModificarActivity extends AppCompatActivity {
         }
 
         etName.setText(nom);
-        etSurname.setText(cognom);
+
         etAge.setText(edat);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -73,7 +71,7 @@ public class ModificarActivity extends AppCompatActivity {
 
                 realm.beginTransaction();
 
-                Persona persona = new Persona(dni, etName.getText().toString(), etSurname.getText().toString(), gender, Integer.parseInt((etAge.getText().toString())));
+                Persona persona = new Persona(dni, etName.getText().toString(), gender, Integer.parseInt((etAge.getText().toString())));
                 realm.insertOrUpdate(persona);
 
                 realm.commitTransaction();

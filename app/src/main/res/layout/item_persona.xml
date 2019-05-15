@@ -27,23 +27,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/apellidoList"
-        android:layout_width="60dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/edatList"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/nombreList"
         android:layout_width="60dp"
         android:layout_height="20dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/apellidoList"
+        app:layout_constraintStart_toEndOf="@+id/edatList"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView

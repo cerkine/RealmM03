@@ -9,17 +9,15 @@ public class Persona extends RealmObject {
     @PrimaryKey
     String dni;
 
-
-    String nombre;
-    String apellido;
+    String fullName;
     int edat;
     String genero;
 
 
-    public Persona(String dni, String nombre, String apellido, String genero, int edat) {
+    public Persona(String dni, String fullName,  String genero, int edat) {
         this.dni = dni;
-        this.nombre = nombre;
-        this.apellido = apellido;
+        this.fullName = fullName;
+
         this.genero = genero;
         this.edat = edat;
     }

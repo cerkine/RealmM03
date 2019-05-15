@@ -40,9 +40,7 @@ public class AnadirPersonaActivity extends AppCompatActivity {
                 EditText et = findViewById(R.id.etEdatAñadir);
                 persona.edat = Integer.parseInt(et.getText().toString());
                 et = findViewById(R.id.etNombreAñadir);
-                persona.nombre = et.getText().toString();
-                et = findViewById(R.id.etApellidoAñadir);
-                persona.apellido = et.getText().toString();
+                persona.fullName = et.getText().toString();
                 et = findViewById(R.id.etDniAñadir);
                 persona.dni = et.getText().toString();
                 genero = String.valueOf(sGenero.getSelectedItem());
